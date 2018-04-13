@@ -1,0 +1,130 @@
+body{
+  font-family: sans-serif;Arial,Helvetica;
+  color: #2d3436;
+}
+form{
+  width: 500px;
+  margin: 10px auto;
+  margin-top: 70px;
+  padding:15px 15px;
+  background: #e77f67;
+  padding-bottom: 55px;
+  border-radius: 25px;
+}
+h1{
+  margin: 6px 0 4px 16px;
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+}
+input .contact, [type="text"],
+input .contact, [type="email"],
+textarea{
+  border: none;
+  font-size: 18px;
+  height: auto;
+  margin:0;
+  outline: 0;
+  padding: 8px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #000;
+  margin-bottom: 20px;
+  padding-right: 0.5px;
+}
+button{
+  padding: 12px 22px 12px 22px;
+  color: #FFF;
+  background-color: #B23535;
+  font-size: 24px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 30%;
+  border: 1px solid #a30000;
+  border-width: 1px 1px 3px;
+  border-style: none;
+}
+fieldset{
+  margin-bottom: 10px;
+  border: none;
+}
+
+label{
+  display: block;
+  margin-bottom: 8px;
+  color: #2d3436;
+  font-weight: bold;
+  text-align: center;
+}
+#clear{
+  padding: 12px 22px 12px 15px;
+  color: #FFF;
+  background-color: #B23535;
+  font-size: 24px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 20px;
+  margin-right: 5%;
+  margin-left: 19%;
+  width: 30%;
+  border: 1px solid #a30000;
+  border-width: 1px 1px 3px;
+  border-style: none;
+}
+/*horloge*/
+
+#clock{
+  color:#fff;
+  font-size: 195px;
+  background-color: #ff7675;
+  padding: 0.5em 0em;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Helvetica;Arial;
+  text-align: center;
+}
+#banner{
+  color: #fefefe;
+  font-size: 50px;
+  text-align: center;
+  background-color: #d63031;
+  padding:0.5em 0em;
+  width: 80%;
+  margin:10% auto 0%;
+  font-family: Helvetica;
+  text-align: left;
+  text-transform: uppercase;
+}
+span{
+  margin-left: 175px;
+}
+
+
+/*math addition*/
+
+
+#wrapper{
+  width: 750px;
+  height: 350px;
+  background-color: #e17055;
+  margin-top: 120px;
+  margin-left: 220px;
+  border-radius: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+#btn{
+  background-color: #d63031;
+  color: #000;
+  padding:12px;
+  border-color:#000;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 70px;
+}
