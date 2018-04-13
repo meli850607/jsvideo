@@ -1,3 +1,33 @@
+/*horloge*/
+
+#clock{
+  color:#fff;
+  font-size: 100px;
+  background-color: #ff7675;
+  padding: 0.5em 0em;
+  width: 40%;
+  margin: 0 auto;
+  font-family: Helvetica;Arial;
+  text-align: center;
+}
+#banner{
+  color: #fefefe;
+  font-size: 40px;
+  text-align: center;
+  background-color: #d63031;
+  padding:0.5em 0em;
+  width: 40%;
+  margin:10% auto 0%;
+  font-family: Helvetica;
+  text-align: left;
+  text-transform: uppercase;
+}
+span{
+  margin-left: 200px;
+}
+
+
+/*contact form*/
 body{
   font-family: sans-serif;Arial,Helvetica;
   color: #2d3436;
@@ -15,7 +45,7 @@ h1{
   margin: 6px 0 4px 16px;
   font-size: 26px;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 input .contact, [type="text"],
 input .contact, [type="email"],
@@ -74,33 +104,6 @@ label{
   border-width: 1px 1px 3px;
   border-style: none;
 }
-/*horloge*/
-
-#clock{
-  color:#fff;
-  font-size: 195px;
-  background-color: #ff7675;
-  padding: 0.5em 0em;
-  width: 80%;
-  margin: 0 auto;
-  font-family: Helvetica;Arial;
-  text-align: center;
-}
-#banner{
-  color: #fefefe;
-  font-size: 50px;
-  text-align: center;
-  background-color: #d63031;
-  padding:0.5em 0em;
-  width: 80%;
-  margin:10% auto 0%;
-  font-family: Helvetica;
-  text-align: left;
-  text-transform: uppercase;
-}
-span{
-  margin-left: 175px;
-}
 
 
 /*math addition*/
@@ -111,7 +114,7 @@ span{
   height: 350px;
   background-color: #e17055;
   margin-top: 120px;
-  margin-left: 220px;
+  margin-left: 500px;
   border-radius: 30px;
   padding-left: 50px;
   padding-right: 50px;
@@ -126,5 +129,67 @@ span{
   font-weight: bold;
   width: 100px;
   border-radius: 10px;
-  margin-left: 70px;
+  margin-left: 20px;
+}
+
+
+/*todo list*/
+
+#add{
+  background-color:#d63031;
+  border: 2px solid #000;;
+  color: #000;
+  padding: 10px 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-top: 35px;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+.remove{
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #d63031;
+  float:right;
+  clear: both;
+  border-radius: 5px;
+  width: 90px;
+  height: 40px;
+  font-size: 15px;
+  color: #000;
+  border: 2px solid #000;
+}
+.wrapper{
+  width: 450px;
+  background-color:#e17055 ;
+  margin-top: 120px;
+  margin-left: 650px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-right: 65px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  text-align: left;
+  line-height: 35px;
+  font-size: 20px;
+}
+#task{
+  width: 320px;
+  height: 30px;
+  margin-left: 17px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-color: #000;
+}
+h1 .to{
+  margin-top: 50px;
+  margin-left: 20px;
+  padding-top: 50px;
+  color: #000!important;
 }

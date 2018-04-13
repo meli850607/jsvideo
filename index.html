@@ -9,6 +9,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
   <body>
+    <!--horloge-->
+    <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
+    <!--contact form-->
     <form id="cf" method="post" action="">
       <h1>Contactez-moi</h1>
     <fieldset>
@@ -26,9 +30,7 @@
       <input id="clear" type="reset" />
 
     </form>
-    <!--horloge-->
-    <div id="banner"><span>Your local time</span></div>
-      <div id="clock"></div>
+
 
       <!--math addition-->
       <div id="wrapper">
@@ -54,6 +56,16 @@
           </td>
         </tr>
       </table>
+    </div>
+
+    <!--todo list-->
+
+
+    <div class="wrapper">
+      <h1 class="to">To do list</h1>
+      <input id="task" /> <button id="add">Ajouter une tâche</button>
+      <!--<hr />-->
+      <div id="todos"></div>
     </div>
 
     <script src="script.js"></script>
