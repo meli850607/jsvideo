@@ -1,48 +1,48 @@
 //horloge
 
-setInterval(function(){
-var currentTime = new Date();
-var hours = currentTime.getHours();
-var minutes = currentTime.getMinutes();
-var seconds = currentTime.getSeconds();
-var period = "AM";
-if (hours >= 12){
-  period = "PM";
-}
-  if (hours > 12){
+setInterval(function() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+  var period = "AM";
+  if (hours >= 12) {
+    period = "PM";
+  }
+  if (hours > 12) {
     hours = hours - 12;
   }
-  if (seconds < 10){
-    seconds = "0"+seconds;
+  if (seconds < 10) {
+    seconds = "0" + seconds;
   }
-  if (minutes < 10){
+  if (minutes < 10) {
     minutes = "0" + minutes;
   }
-var clockTime = hours + " : " + minutes + " : " + seconds + " " + period;
-var clock = document.getElementById('clock');
-clock.innerText = clockTime;
-},1000);
+  var clockTime = hours + " : " + minutes + " : " + seconds + " " + period;
+  var clock = document.getElementById('clock');
+  clock.innerText = clockTime;
+}, 1000);
 
 
 //contact form
 
-$(document).ready(function(){
-  function init(){
-    if(localStorage["name"]){
+$(document).ready(function() {
+  function init() {
+    if (localStorage["name"]) {
       $('#name').val(localStorage["name"]);
 
     }
-    if(localStorage["email"]){
+    if (localStorage["email"]) {
       $('#email').val(localStorage["email"]);
     }
-    if(localStorage["message"]){
+    if (localStorage["message"]) {
       $('#message').val(localStorage["message"]);
     }
   }
   init();
 });
 
-$('.stored').change(function(){
+$('.stored').change(function() {
   localStorage[$(this).attr('name')] = $(this).val();
 
 });
@@ -64,11 +64,11 @@ var checkAnswer = document.querySelector('input[type=texte]');
 var value = checkAnswer.value;
 var btn = document.querySelector('input[type=button][value=check]');
 
-btn.onclick = function(){
+btn.onclick = function() {
   value = checkAnswer.value;
   if (value == answer) {
     alert('bonne réponse!');
-  }else{
+  } else {
     alert("Désolé, la réponse est " + answer);
   }
   document.querySelector('input[type=texte]').value = "";
@@ -85,16 +85,16 @@ btn.onclick = function(){
 
 //todo list
 
-function get_todos(){
+function get_todos() {
   var todos = new Array;
   var todos_str = localStorage.getItem('todo');
-  if (todos_str !== null){
+  if (todos_str !== null) {
     todos = JSON.parse(todos_str);
   }
   return todos;
 }
 
-function add(){
+function add() {
   var task = document.getElementById('task').value;
 
   var todos = get_todos();
@@ -106,12 +106,13 @@ function add(){
   return false;
 }
 
-function clearDefault(a){
-  if (a.defaultValue == a.value){
+function clearDefault(a) {
+  if (a.defaultValue == a.value) {
     a.value = ""
   }
 };
-function remove(){
+
+function remove() {
   var id = this.getAttribute('id');
   var todos = get_todos();
   todos.splice(id, 1);
@@ -122,22 +123,22 @@ function remove(){
   return false;
 }
 
-function show(){
+function show() {
   var todos = get_todos();
 
   var html = '<ul>';
-  for(var i = 0; i < todos.length; i++){
+  for (var i = 0; i < todos.length; i++) {
     html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">Delete</button></li>';
-    };
-    html += '</ul>';
+  };
+  html += '</ul>';
 
-    document.getElementById('todos').innerHTML = html;
+  document.getElementById('todos').innerHTML = html;
 
-    var buttons = document.getElementsByClassName('remove');
-    for(var i = 0; i < buttons.length; i++){
-      buttons[i].addEventListener('click',remove);
-    };
-  }
+  var buttons = document.getElementsByClassName('remove');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', remove);
+  };
+}
 
 document.getElementById('add').addEventListener('click', add);
 show();
